@@ -5,7 +5,15 @@ body {
 }
 
 .grid {
+    display: flex;
+    flex-wrap: wrap;
     border: solid 2px black;
     height: 200px;
     width: 200px;
+}
+
+.square {
+    height: 20px;
+    width: 20px;
+    background-color: pink;
 }
