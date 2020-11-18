@@ -1,2 +1,2 @@
-# snakegame
-Snake Game written in vanilla JS.
+# Snake Game
+A game written in vanilla JS.
