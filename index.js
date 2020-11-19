@@ -5,9 +5,6 @@ let squares = [];
 let currentSnake = [2, 1, 0];
 let direction = 1;
 
-
-console.log('hello');
-
 function createGrid() {
     for (let i = 0; i < 100; i++) {
         // create the element 
@@ -61,3 +58,5 @@ function control(e) {
         console.log('down pressed')
     }
 }
+
+document.addEventListener('keyup', control)
