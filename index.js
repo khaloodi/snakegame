@@ -40,3 +40,24 @@ function move() {
 }
 
 move();
+
+const timerId = setInterval(move, 1000);
+
+// clearInterval(timerId)
+
+// 39 is right arrow
+// 38 is for the up arrow
+// 37 is for the left arrow
+// 40 is for the down arrow
+
+function control(e) {
+    if (e.keyCode === 39) {
+        console.log('right pressed')
+    } else if (e.keyCode === 38) {
+        console.log('up pressed')
+    } else if (e.keyCode === 37) {
+        console.log('left pressed')
+    } else if (e.keyCode === 36) {
+        console.log('down pressed')
+    }
+}
