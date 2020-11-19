@@ -2,7 +2,7 @@ const grid = document.querySelector('.grid');
 const start = document.getElementById('start');
 const score = document.getElementById('score');
 let squares = []
-let snake = [0, 1, 2]
+let currentSnake = [2, 1, 0]
 
 
 console.log('hello')
@@ -23,6 +23,18 @@ function createGrid() {
     }
 }
 
-createGrid();
+createGrid()
 
-snake.forEach(idx => squares[idx].classList.add('snake'))
+currentSnake.forEach(idx => squares[idx].classList.add('snake'))
+
+function move() {
+    // remove last element from currentSnake array
+
+    // remove style from element
+
+    // add square in direction am going
+
+    // add style
+}
+
+move()
