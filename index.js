@@ -14,14 +14,12 @@ function createGrid() {
 
         // add the square class and styles
         square.classList.add('square');
-        console.log(square);
 
         // add the element to our dom grid
         grid.appendChild(square);
 
         // append square to squares array
         squares.push(square);
-        console.log(squares);
     }
 }
 
