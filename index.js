@@ -1,7 +1,9 @@
 const grid = document.querySelector('.grid');
 const start = document.getElementById('start');
 const score = document.getElementById('score');
-squares = []
+const squares = []
+const snake = [0, 1, 2]
+
 
 console.log('hello')
 
