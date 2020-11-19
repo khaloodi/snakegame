@@ -1,8 +1,8 @@
 const grid = document.querySelector('.grid');
 const start = document.getElementById('start');
 const score = document.getElementById('score');
-const squares = []
-const snake = [0, 1, 2]
+let squares = []
+let snake = [0, 1, 2]
 
 
 console.log('hello')
@@ -24,3 +24,5 @@ function createGrid() {
 }
 
 createGrid();
+
+snake.forEach(idx => squares[idx].classList.add('snake'))
