@@ -29,10 +29,10 @@ currentSnake.forEach(idx => squares[idx].classList.add('snake'))
 
 function move() {
     // remove last element from currentSnake array
-
+    let tail = currentSnake.pop();
     // remove style from element
-
-    // add square in direction am going
+    squares[tail].classList.remove('snake')
+        // add square in direction am going
 
     // add style
 }
