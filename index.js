@@ -61,8 +61,7 @@ function move() {
 move();
 
 const timerId = setInterval(move, 1000);
-
-// clearInterval(timerId)
+// to stop the infinite move clearInterval(timerId)
 
 // 39 is right arrow
 // 38 is for the up arrow
