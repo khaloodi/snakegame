@@ -48,6 +48,22 @@ function move() {
 
 
 
+    //deal with snake head getting the apple
+    if () {
+        //remove the class of apple
+
+        //grow our snake by adding class of snake to it
+
+        //grow our snake array
+
+        //generate a new apple
+
+        //add one to the score
+
+        //speed up our snake
+
+    }
+
     // remove last element from currentSnake array
     let tail = currentSnake.pop();
     // remove style from element
