@@ -27,6 +27,18 @@ createGrid();
 currentSnake.forEach(idx => squares[idx].classList.add('snake'))
 
 function move() {
+
+    if (
+        // snake hit's bottom
+        // snake hit's right wall
+        // snake hit's left wall
+        // snake hit's top
+    ) {
+
+    }
+
+
+
     // remove last element from currentSnake array
     let tail = currentSnake.pop();
     // remove style from element
