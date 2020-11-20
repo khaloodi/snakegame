@@ -26,6 +26,15 @@ createGrid();
 
 currentSnake.forEach(idx => squares[idx].classList.add('snake'))
 
+function generateApples() {
+    do {
+        //generate a random number
+        appleIndex = Math.floor(Math.random() * squares.length)
+    } while (squares[appleIndex].classList.contains('snake'))
+    squares[appleIndex].classList.add('apple')
+}
+generateApples()
+
 function move() {
 
     if (
