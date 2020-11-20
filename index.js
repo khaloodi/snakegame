@@ -29,13 +29,13 @@ currentSnake.forEach(idx => squares[idx].classList.add('snake'))
 function move() {
 
     if (
-        // snake hit's bottom
-        // snake hit's right wall
-        // snake hit's left wall
-        // snake hit's top
-    ) {
-
-    }
+        (currentSnake[0] + width >= 100 && direction === 10) || //if snake has hit bottom
+        (currentSnake[0] % width === 9 && direction === 1) || //if snake has hit right wall
+        (currentSnake[0] % width === 0 && direction === -1) || //if snake has hit left wall
+        (currentSnake[0] - width < 0 && direction === -10) || //if snake has hit top
+        squares[currentSnake[0] + direction].classList.contains('snake') //if snake runs into itself
+    )
+        return clearInterval(timerId)
 
 
 
@@ -64,15 +64,18 @@ function control(e) {
     if (e.keyCode === 39) {
         console.log('right pressed')
         direction = 1;
-    } else if (e.keyCode === 38) {
+    }
+    if (e.keyCode === 38) {
         console.log('up pressed')
-        direction -= width;
-    } else if (e.keyCode === 37) {
+        direction = -width;
+    }
+    if (e.keyCode === 37) {
         console.log('left pressed')
         direction = -1;
-    } else if (e.keyCode === 40) {
+    }
+    if (e.keyCode === 40) {
         console.log('down pressed')
-        direction += width;
+        direction = width;
     }
 }
 
